@@ -1,5 +1,5 @@
-import 'package:e_learning_app/views/onboarding/onboarding_start_view.dart';
-import 'package:e_learning_app/views/splash/widgets/sliding_text.dart';
+import 'package:e_learning_app/modules/onboarding/views/onboarding_start_view.dart';
+import 'package:e_learning_app/modules/splash/widgets/sliding_text.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

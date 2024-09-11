@@ -1,6 +1,6 @@
-import 'package:e_learning_app/controller/onboarding_controller/onboarding_controller_repo_impl.dart';
-import 'package:e_learning_app/views/onboarding/widgets/custom_button.dart';
-import 'package:e_learning_app/views/onboarding/widgets/custtom_page_view_start.dart';
+import 'package:e_learning_app/modules/onboarding/controller/onboarding_controller/onboarding_controller_repo_impl.dart';
+import 'package:e_learning_app/modules/onboarding/views/widgets/custom_button.dart';
+import 'package:e_learning_app/modules/onboarding/views/widgets/custtom_page_view_start.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_core/get_core.dart';
 import 'package:get/get_instance/get_instance.dart';

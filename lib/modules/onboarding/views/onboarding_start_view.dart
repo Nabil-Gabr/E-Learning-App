@@ -1,4 +1,4 @@
-import 'package:e_learning_app/views/onboarding/widgets/onboarding_start_view_body.dart';
+import 'package:e_learning_app/modules/onboarding/views/widgets/onboarding_start_view_body.dart';
 import 'package:flutter/material.dart';
 
 class OnboardingStartView extends StatelessWidget {

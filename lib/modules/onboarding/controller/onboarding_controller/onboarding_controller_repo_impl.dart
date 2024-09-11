@@ -1,6 +1,6 @@
-import 'package:e_learning_app/controller/onboarding_controller/onboarding_controller_repo.dart';
-import 'package:e_learning_app/data/datasource/static/static.dart';
-import 'package:e_learning_app/views/onboarding/onboarding_login_view.dart';
+import 'package:e_learning_app/modules/onboarding/controller/onboarding_controller/onboarding_controller_repo.dart';
+import 'package:e_learning_app/modules/onboarding/data/datasource/static/static.dart';
+import 'package:e_learning_app/modules/onboarding/views/onboarding_login_view.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

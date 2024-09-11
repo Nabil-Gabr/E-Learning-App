@@ -1,5 +1,5 @@
 import 'package:e_learning_app/core/constant/image_asset.dart';
-import 'package:e_learning_app/views/splash/widgets/textLogo.dart';
+import 'package:e_learning_app/modules/splash/widgets/textLogo.dart';
 import 'package:flutter/material.dart';
 
 class SlidingText extends StatelessWidget {
@@ -26,7 +26,7 @@ class SlidingText extends StatelessWidget {
               alignment: Alignment.center,
             ),
             const SizedBox(height: 8,),
-            TextLogo(fontSize: 13,),
+            const TextLogo(fontSize: 13,),
             
           ],
         )

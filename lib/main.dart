@@ -1,4 +1,4 @@
-import 'package:e_learning_app/views/splash/splash_view.dart';
+import 'package:e_learning_app/modules/splash/splash_view.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 

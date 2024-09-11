@@ -1,5 +1,5 @@
 import 'package:e_learning_app/core/constant/image_asset.dart';
-import 'package:e_learning_app/data/models/onboarding_start_model.dart';
+import 'package:e_learning_app/modules/onboarding/data/models/onboarding_start_model.dart';
 
 List<OnboardingStartModel> onboardingStartList = [
   OnboardingStartModel(
