@@ -1,4 +1,4 @@
-import 'package:e_learning_app/modules/splash/splash_view.dart';
+import 'package:e_learning_app/modules/level/views/track_view.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 
@@ -16,7 +16,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         scaffoldBackgroundColor: const  Color(0xffE4F1F8)
       ),
-      home: const SplashView(),
+      home: const TrackView(),
+      // const SplashView(),
     );
   }
 }

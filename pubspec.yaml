@@ -66,6 +66,7 @@ flutter:
     - asset/images/Chat_SVG 1.png
     - asset/images/online_school_SVG 1.png
     - asset/images/undraw_web.png
+    - asset/images/man1.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
