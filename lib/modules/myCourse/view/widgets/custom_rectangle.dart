@@ -1,3 +1,4 @@
+import 'package:e_learning_app/core/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 
 class CustomRectangle extends StatelessWidget {
@@ -21,12 +22,9 @@ class CustomRectangle extends StatelessWidget {
             currenSliderValue = value;
           },
         ),
-        const Text(
+        Text(
           'Completed',
-          style: TextStyle(
-            fontSize: 12,
-            color: Colors.white,
-          ),
+          style: AppStyles.textStyle12.copyWith(fontWeight: FontWeight.normal),
         ),
       ],
     );

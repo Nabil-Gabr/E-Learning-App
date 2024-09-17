@@ -1,3 +1,4 @@
+import 'package:e_learning_app/core/utils/app_styles.dart';
 import 'package:e_learning_app/modules/onboarding/controller/onboarding_controller/onboarding_controller_repo_impl.dart';
 import 'package:e_learning_app/modules/onboarding/data/datasource/static/static.dart';
 import 'package:flutter/material.dart';
@@ -43,8 +44,7 @@ class CustomPageViewLogin extends GetView<OnboardingControllerRepoImpl> {
                         alignment: Alignment.centerLeft,
                         child: Text(
                           onboardingLoginList[index].title!,
-                          style: const TextStyle(
-                              fontSize: 25, color: Color(0xff060302)),
+                          style: AppStyles.textStyle25,
                         ),
                       ),
                       const SizedBox(
@@ -52,8 +52,7 @@ class CustomPageViewLogin extends GetView<OnboardingControllerRepoImpl> {
                       ),
                       Text(
                         onboardingLoginList[index].subTitle!,
-                        style: const TextStyle(
-                            fontSize: 25, color: Color(0xff060302)),
+                        style: AppStyles.textStyle25,
                             textAlign: TextAlign.left,
                       ),
                     ],

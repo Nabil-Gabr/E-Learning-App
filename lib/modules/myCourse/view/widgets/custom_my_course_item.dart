@@ -1,3 +1,4 @@
+import 'package:e_learning_app/core/utils/app_styles.dart';
 import 'package:e_learning_app/modules/courseDetails/view/course_details_view.dart';
 import 'package:e_learning_app/modules/myCourse/view/widgets/custom_rectangle.dart';
 import 'package:flutter/material.dart';
@@ -19,21 +20,28 @@ class CustomMyCourseItem extends StatelessWidget {
           color: Color(0xff3787FF),
           borderRadius: BorderRadius.all(Radius.circular(16)),
         ),
-        child: const Padding(
-          padding: EdgeInsets.only(top: 24.0, left: 19, right: 11, bottom: 11),
+        child: Padding(
+          padding:
+              const EdgeInsets.only(top: 24.0, left: 19, right: 11, bottom: 11),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
                 'Product',
-                style: TextStyle(fontSize: 14.4, color: Colors.white),
+                style: AppStyles.textStyle14.copyWith(
+                    fontWeight: FontWeight.normal, color: Colors.white),
               ),
+
               Text(
                 'Design v1.0',
-                style: TextStyle(fontSize: 14.4, color: Colors.white),
+                style: AppStyles.textStyle14.copyWith(
+                    fontWeight: FontWeight.normal, color: Colors.white),
               ),
-              Expanded(child: SizedBox()),
-              CustomRectangle(),
+
+              const Expanded(child: SizedBox()),
+
+              const CustomRectangle(),
+              
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -41,28 +49,22 @@ class CustomMyCourseItem extends StatelessWidget {
                     children: [
                       Text(
                         '14',
-                        style: TextStyle(
-                            fontSize: 14.4,
-                            fontWeight: FontWeight.w600,
-                            color: Colors.white),
+                        style: AppStyles.textStyle14.copyWith(
+                            fontWeight: FontWeight.w600, color: Colors.white),
                       ),
                       Text(
                         '/',
-                        style: TextStyle(
-                            fontSize: 12,
-                            fontWeight: FontWeight.w600,
-                            color: Colors.white),
+                        style: AppStyles.textStyle12
+                            .copyWith(fontWeight: FontWeight.w600),
                       ),
                       Text(
                         '8',
-                        style: TextStyle(
-                            fontSize: 12,
-                            fontWeight: FontWeight.w600,
-                            color: Colors.white),
-                      ),
+                        style: AppStyles.textStyle12
+                            .copyWith(fontWeight: FontWeight.w600),
+                      )
                     ],
                   ),
-                  Icon(
+                  const Icon(
                     Icons.play_circle_fill_sharp,
                     color: Colors.black,
                     size: 44,

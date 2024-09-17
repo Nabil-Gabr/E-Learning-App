@@ -1,3 +1,4 @@
+import 'package:e_learning_app/core/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 
 class CustomSliverList extends StatelessWidget {
@@ -10,17 +11,14 @@ class CustomSliverList extends StatelessWidget {
     return SliverList.builder(
       itemCount: 5,
       itemBuilder: (context, index) {
-        return const Padding(
-          padding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 10),
+        return Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 10),
           child: Row(
             children: [
-              Expanded(
+              const Expanded(
                   child: Text(
                 "01",
-                style: TextStyle(
-                    fontSize: 24,
-                    color: Color(0xff060302),
-                    fontWeight: FontWeight.w500),
+                style: AppStyles.textStyle24,
               )),
               Expanded(
                   flex: 7,
@@ -32,21 +30,17 @@ class CustomSliverList extends StatelessWidget {
                         children: [
                           Text(
                             'Welcome to the Course',
-                            style: TextStyle(
-                                fontSize: 12,
-                                color: Color(0xff767372),
-                                fontWeight: FontWeight.w500),
+                            style: AppStyles.textStyle12
+                                .copyWith(color: const Color(0xff767372)),
                           ),
                           Text(
                             '6:10  ' '6:10',
-                            style: TextStyle(
-                                fontSize: 12,
-                                color: Color(0xff060302),
-                                fontWeight: FontWeight.w500),
+                            style: AppStyles.textStyle12
+                                .copyWith(color: const Color(0xff060302)),
                           ),
                         ],
                       ),
-                      Icon(
+                      const Icon(
                         Icons.play_circle_fill,
                         color: Color(0xff3787FF),
                         size: 44,

@@ -1,3 +1,4 @@
+import 'package:e_learning_app/core/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 
 class CustomColumnBestSeller extends StatelessWidget {
@@ -21,21 +22,24 @@ class CustomColumnBestSeller extends StatelessWidget {
                   topRight: Radius.circular(50),
                   bottomRight: Radius.circular(50),
                 )),
-            child: const Text(
+            child: Text(
               'BESTSELLER',
-              style: TextStyle(fontSize: 12, color: Colors.white),
+              style:
+                  AppStyles.textStyle12.copyWith(fontWeight: FontWeight.normal),
             ),
           ),
           const SizedBox(
             height: 12,
           ),
-          const Text(
+          Text(
             'Product',
-            style: TextStyle(fontSize: 14.4, color: Color(0xff060302)),
+            style:
+                AppStyles.textStyle14.copyWith(fontWeight: FontWeight.normal),
           ),
-          const Text(
+          Text(
             'Design v1.0',
-            style: TextStyle(fontSize: 14.4, color: Color(0xff060302)),
+            style:
+                AppStyles.textStyle14.copyWith(fontWeight: FontWeight.normal),
           )
         ],
       ),

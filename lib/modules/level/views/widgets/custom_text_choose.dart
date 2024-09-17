@@ -1,3 +1,4 @@
+import 'package:e_learning_app/core/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 
 class CustomTextChoose extends StatelessWidget {
@@ -8,7 +9,7 @@ class CustomTextChoose extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
             padding: const EdgeInsets.only(left: 5.0),
-            child: Text(text,style: const TextStyle(fontSize: 30),),
+            child: Text(text,style: AppStyles.textStyle30),
           );
   }
 }

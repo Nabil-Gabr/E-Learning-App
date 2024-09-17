@@ -17,17 +17,13 @@ class MyCourseView extends StatelessWidget {
               Expanded(
                 child: CustomScrollView(
                   slivers: [
-                    SliverToBoxAdapter(
-                      child: CustomAppBar(),
-                    ),
-                    SliverToBoxAdapter(
-                      child: CustomLearnedToda(),
-                    ),
-                    SliverToBoxAdapter(
-                      child: SizedBox(
-                        height: 20,
-                      ),
-                    ),
+                    
+                    SliverToBoxAdapter(child: CustomAppBar(),),
+
+                    SliverToBoxAdapter(child: CustomLearnedToda(),),
+
+                    SliverToBoxAdapter(child: SizedBox(height: 20,),),
+
                     CustomSliverGrid()
                   ],
                 ),

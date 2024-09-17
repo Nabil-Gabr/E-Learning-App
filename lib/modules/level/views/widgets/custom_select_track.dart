@@ -46,11 +46,6 @@ class CustomSelectTrack extends StatelessWidget {
                   bottom: 130,
                   right: 0,
                   child: BuildTopicCircle(textTopic: 'Graphics')),
-                  // Positioned(
-                  //   top: 40,
-                  //   right: 30,
-                  //   child: Text("Mobile App"),
-                  // ),
                   
               ],),
           );

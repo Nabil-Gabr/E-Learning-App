@@ -1,3 +1,4 @@
+import 'package:e_learning_app/core/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 
 class CustomAboutSection extends StatelessWidget {
@@ -7,21 +8,23 @@ class CustomAboutSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Padding(
-      padding: EdgeInsets.symmetric(horizontal: 20.0),
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 20.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
             'About this course',
-            style: TextStyle(fontSize: 14.4, color: Color(0xff060302)),
+            style:
+                AppStyles.textStyle14.copyWith(fontWeight: FontWeight.normal),
           ),
-          SizedBox(
+          const SizedBox(
             height: 9,
           ),
           Text(
             'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, ',
-            style: TextStyle(fontSize: 12, color: Color(0xff767372)),
+            style: AppStyles.textStyle12.copyWith(
+                color: const Color(0xff767372), fontWeight: FontWeight.normal),
           )
         ],
       ),

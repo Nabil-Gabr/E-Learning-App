@@ -1,3 +1,4 @@
+import 'package:e_learning_app/core/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 
 class CustomRowAddReplies extends StatelessWidget {
@@ -12,10 +13,10 @@ class CustomRowAddReplies extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          const Text(
+           Text(
             '1 Replies',
             style:
-                TextStyle(fontSize: 14.4, color: Color(0xff767372)),
+                AppStyles.textStyle14.copyWith(color: const  Color(0xff767372),fontWeight: FontWeight.normal),
           ),
           Container(
             width: 106,
@@ -25,9 +26,9 @@ class CustomRowAddReplies extends StatelessWidget {
               color: Color(0xff3787FF),
               borderRadius: BorderRadius.all(Radius.circular(6)),
             ),
-            child: const Text(
+            child:  Text(
               'Add reply',
-              style: TextStyle(fontSize: 14.4, color: Colors.white),
+              style: AppStyles.textStyle14.copyWith(color: Colors.white,fontWeight: FontWeight.normal),
             ),
           )
         ],

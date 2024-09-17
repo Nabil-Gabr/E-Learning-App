@@ -12,19 +12,21 @@ class OnboardingLoginViewBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Get.put(OnboardingControllerRepoImpl());
-    return const Column(
-      children: [
-        CustomPageViewLogin(),
-        SizedBox(height: 25,),
-
-        CustomButtonApp(textButton: 'Student',height: 50,width: 354,backgroundColor: Color(0xff3787FF),textColor: Color(0xffFFFFFF),),
-        SizedBox(height: 15,),
-        Padding(
-          padding: EdgeInsets.only(bottom: 40.0),
-          child: CustomButtonApp(textButton: 'Teacher',height: 50,width: 354,backgroundColor: Color(0xffFFFFFF),textColor: Color(0xff3787FF,),)
-          
-        ),
-      ],
+    return const SingleChildScrollView(
+      child: Column(
+        children: [
+          CustomPageViewLogin(),
+          SizedBox(height: 25,),
+      
+          CustomButtonApp(textButton: 'Student',height: 50,width: 354,backgroundColor: Color(0xff3787FF),textColor: Color(0xffFFFFFF),),
+          SizedBox(height: 15,),
+          Padding(
+            padding: EdgeInsets.only(bottom: 40.0),
+            child: CustomButtonApp(textButton: 'Teacher',height: 50,width: 354,backgroundColor: Color(0xffFFFFFF),textColor: Color(0xff3787FF,),)
+            
+          ),
+        ],
+      ),
     );
   }
 }

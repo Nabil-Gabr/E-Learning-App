@@ -1,3 +1,4 @@
+import 'package:e_learning_app/core/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 
 class CustomLevel extends StatelessWidget {
@@ -16,7 +17,7 @@ class CustomLevel extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.end,
       children: [
-        Text(textLevel,style: const TextStyle(fontSize: 12,color: Color(0xff060302)),),
+        Text(textLevel,style:  AppStyles.textStyle12.copyWith(color: const  Color(0xff060302),fontWeight: FontWeight.normal),),
         const Flexible(child: SizedBox(height: 19,)),
         Container(
           height: 54,
@@ -25,7 +26,7 @@ class CustomLevel extends StatelessWidget {
             color: Colors.white,
             borderRadius: BorderRadius.only(topLeft: Radius.circular(20),topRight: Radius.circular(20))
           ),
-          child: Text(ageLevel,style: const TextStyle(fontSize: 16,color: Color(0xff060302)),textAlign: TextAlign.center,),
+          child: Text(ageLevel,style: AppStyles.textStyle16,textAlign: TextAlign.center,),
         ),
         Container(
           height: height,
