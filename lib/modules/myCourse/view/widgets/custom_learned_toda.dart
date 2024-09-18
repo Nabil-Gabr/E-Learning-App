@@ -1,3 +1,4 @@
+import 'package:e_learning_app/core/constant/app_color.dart';
 import 'package:e_learning_app/core/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 
@@ -10,7 +11,7 @@ class CustomLearnedToda extends StatelessWidget {
       height: 98,
       width: double.infinity,
       decoration: const BoxDecoration(
-        color: Color(0xff3787FF),
+        color: AppColorLight.seconderyColor,
         borderRadius: BorderRadius.all(Radius.circular(16)),
       ),
       child: Padding(

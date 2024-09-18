@@ -1,3 +1,4 @@
+import 'package:e_learning_app/core/constant/app_color.dart';
 import 'package:e_learning_app/core/utils/app_styles.dart';
 import 'package:e_learning_app/modules/courseDetails/view/course_details_view.dart';
 import 'package:e_learning_app/modules/myCourse/view/widgets/custom_rectangle.dart';
@@ -17,7 +18,7 @@ class CustomMyCourseItem extends StatelessWidget {
       },
       child: Container(
         decoration: const BoxDecoration(
-          color: Color(0xff3787FF),
+          color: AppColorLight.seconderyColor,
           borderRadius: BorderRadius.all(Radius.circular(16)),
         ),
         child: Padding(
@@ -29,13 +30,13 @@ class CustomMyCourseItem extends StatelessWidget {
               Text(
                 'Product',
                 style: AppStyles.textStyle14.copyWith(
-                    fontWeight: FontWeight.normal, color: Colors.white),
+                    fontWeight: FontWeight.normal, color: AppColorLight.primaryColor),
               ),
 
               Text(
                 'Design v1.0',
                 style: AppStyles.textStyle14.copyWith(
-                    fontWeight: FontWeight.normal, color: Colors.white),
+                    fontWeight: FontWeight.normal, color: AppColorLight.primaryColor),
               ),
 
               const Expanded(child: SizedBox()),
@@ -50,7 +51,7 @@ class CustomMyCourseItem extends StatelessWidget {
                       Text(
                         '14',
                         style: AppStyles.textStyle14.copyWith(
-                            fontWeight: FontWeight.w600, color: Colors.white),
+                            fontWeight: FontWeight.w600, color: AppColorLight.primaryColor),
                       ),
                       Text(
                         '/',
@@ -66,7 +67,7 @@ class CustomMyCourseItem extends StatelessWidget {
                   ),
                   const Icon(
                     Icons.play_circle_fill_sharp,
-                    color: Colors.black,
+                    color: AppColorLight.headKineTextColor,
                     size: 44,
                   ),
                 ],

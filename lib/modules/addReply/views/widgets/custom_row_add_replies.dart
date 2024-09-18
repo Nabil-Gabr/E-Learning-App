@@ -1,3 +1,4 @@
+import 'package:e_learning_app/core/constant/app_color.dart';
 import 'package:e_learning_app/core/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 
@@ -16,19 +17,19 @@ class CustomRowAddReplies extends StatelessWidget {
            Text(
             '1 Replies',
             style:
-                AppStyles.textStyle14.copyWith(color: const  Color(0xff767372),fontWeight: FontWeight.normal),
+                AppStyles.textStyle14.copyWith(color: AppColorLight.captionTextColor,fontWeight: FontWeight.normal),
           ),
           Container(
             width: 106,
             height: 41,
             alignment: Alignment.center,
             decoration: const BoxDecoration(
-              color: Color(0xff3787FF),
+              color: AppColorLight.seconderyColor,
               borderRadius: BorderRadius.all(Radius.circular(6)),
             ),
             child:  Text(
               'Add reply',
-              style: AppStyles.textStyle14.copyWith(color: Colors.white,fontWeight: FontWeight.normal),
+              style: AppStyles.textStyle14.copyWith(color: AppColorLight.primaryColor,fontWeight: FontWeight.normal),
             ),
           )
         ],

@@ -1,3 +1,4 @@
+import 'package:e_learning_app/core/constant/app_color.dart';
 import 'package:e_learning_app/core/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 
@@ -17,7 +18,7 @@ class CustomColumnBestSeller extends StatelessWidget {
             height: 26,
             alignment: Alignment.center,
             decoration: const BoxDecoration(
-                color: Color(0xff3787FF),
+                color: AppColorLight.seconderyColor,
                 borderRadius: BorderRadius.only(
                   topRight: Radius.circular(50),
                   bottomRight: Radius.circular(50),

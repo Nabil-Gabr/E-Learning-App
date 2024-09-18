@@ -1,3 +1,4 @@
+import 'package:e_learning_app/core/constant/app_color.dart';
 import 'package:flutter/material.dart';
 
 class CustomTextField extends StatelessWidget {
@@ -11,7 +12,7 @@ class CustomTextField extends StatelessWidget {
       child: TextFormField(
         controller: myController,
         decoration: InputDecoration(
-            fillColor: const Color(0xff3787FF),
+            fillColor: AppColorLight.seconderyColor,
             filled: true,
             enabledBorder: OutlineInputBorder(
               borderSide: BorderSide.none,
@@ -23,7 +24,7 @@ class CustomTextField extends StatelessWidget {
             ),
             suffixIcon: const Icon(
               Icons.send,
-              color: Colors.white,
+              color: AppColorLight.primaryColor,
             )),
       ),
     );

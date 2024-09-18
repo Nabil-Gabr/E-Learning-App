@@ -1,3 +1,4 @@
+import 'package:e_learning_app/core/constant/app_color.dart';
 import 'package:e_learning_app/core/utils/app_styles.dart';
 import 'package:e_learning_app/modules/addReply/views/widgets/custom_action_button.dart';
 import 'package:e_learning_app/modules/addReply/views/widgets/custom_circular_image_item.dart';
@@ -40,12 +41,12 @@ class CustomSliverListReply extends StatelessWidget {
                         Text(
                           '11 mins ago' '   .   ' 'Student',
                           style:
-                              AppStyles.textStyle12.copyWith(color:const  Color(0xff767372),fontWeight: FontWeight.normal)
+                              AppStyles.textStyle12.copyWith(color:AppColorLight.captionTextColor,fontWeight: FontWeight.normal)
                         ),
                         Text(
                           'The step is really easy, just keep practicing line drawing with right posture and correct pencil holding as showen in the video! Good luck ❤',
                           style:
-                              AppStyles.textStyle12.copyWith(color:const  Color(0xff767372),fontWeight: FontWeight.normal)
+                              AppStyles.textStyle12.copyWith(color:AppColorLight.captionTextColor,fontWeight: FontWeight.normal)
                         ),
                         const CustomActionButton()
                       ],

@@ -1,3 +1,4 @@
+import 'package:e_learning_app/core/constant/app_color.dart';
 import 'package:flutter/material.dart';
 
 class TextLogo extends StatelessWidget {
@@ -9,7 +10,7 @@ class TextLogo extends StatelessWidget {
     return  Text(
           "Education app",
           textAlign: TextAlign.center,
-          style: TextStyle(fontSize: fontSize,color: const  Color(0xff3787FF)),
+          style: TextStyle(fontSize: fontSize,color: AppColorLight.seconderyColor),
         );
   }
 }

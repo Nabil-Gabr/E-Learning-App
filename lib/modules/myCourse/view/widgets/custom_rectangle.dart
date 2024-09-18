@@ -1,3 +1,4 @@
+import 'package:e_learning_app/core/constant/app_color.dart';
 import 'package:e_learning_app/core/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 
@@ -11,9 +12,9 @@ class CustomRectangle extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Slider(
-          activeColor: Colors.white,
-          inactiveColor: Colors.black,
-          thumbColor: const Color(0xff3787FF),
+          activeColor: AppColorLight.primaryColor,
+          inactiveColor: AppColorLight.headKineTextColor,
+          thumbColor: AppColorLight.seconderyColor,
           value: currenSliderValue,
           max: 100,
           min: 0,

@@ -1,3 +1,4 @@
+import 'package:e_learning_app/core/constant/app_color.dart';
 import 'package:e_learning_app/core/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 
@@ -30,7 +31,7 @@ class CustomPriceSection extends StatelessWidget {
           Text(
             '6h 14min · 24 Lessons',
             style: AppStyles.textStyle12.copyWith(
-                color: const Color(0xff767372), fontWeight: FontWeight.normal),
+                color: AppColorLight.captionTextColor, fontWeight: FontWeight.normal),
           )
         ],
       ),

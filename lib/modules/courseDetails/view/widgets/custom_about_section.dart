@@ -1,3 +1,4 @@
+import 'package:e_learning_app/core/constant/app_color.dart';
 import 'package:e_learning_app/core/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 
@@ -24,7 +25,7 @@ class CustomAboutSection extends StatelessWidget {
           Text(
             'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, ',
             style: AppStyles.textStyle12.copyWith(
-                color: const Color(0xff767372), fontWeight: FontWeight.normal),
+                color: AppColorLight.captionTextColor, fontWeight: FontWeight.normal),
           )
         ],
       ),

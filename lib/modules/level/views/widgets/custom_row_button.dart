@@ -1,3 +1,4 @@
+import 'package:e_learning_app/core/constant/app_color.dart';
 import 'package:e_learning_app/modules/level/views/level_view.dart';
 import 'package:e_learning_app/modules/level/views/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
@@ -15,7 +16,7 @@ class CustomRowButton extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          TextButton(onPressed: onPressed, child: const Text('Skip',style: TextStyle(fontSize: 15,color: Color(0xff060302)),)),
+          TextButton(onPressed: onPressed, child: const Text('Skip',style: TextStyle(fontSize: 15,color: AppColorLight.bodyTextColor),)),
            CustomButton(text: 'Continue',fontSize: 17.2, width: 110, height: 110, borderRadius: 110,onTap: () {
              Get.to(()=> const LevelView());
            },),

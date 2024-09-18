@@ -1,3 +1,4 @@
+import 'package:e_learning_app/core/constant/app_color.dart';
 import 'package:e_learning_app/modules/addReply/views/add_reply_view.dart';
 import 'package:e_learning_app/modules/courseDetails/view/course_details_view.dart';
 import 'package:e_learning_app/modules/myCourse/view/my_course_view.dart';
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        scaffoldBackgroundColor: const  Color(0xffE4F1F8)
+        scaffoldBackgroundColor: AppColorLight.scaffoldBackgroundColor,
       ),
       home: const MyCourseView(),
       // const AddReplyView(),

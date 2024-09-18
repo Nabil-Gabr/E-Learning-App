@@ -1,3 +1,4 @@
+import 'package:e_learning_app/core/constant/app_color.dart';
 import 'package:e_learning_app/core/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 
@@ -14,7 +15,7 @@ class CustomActionButton extends StatelessWidget {
           children: [
             Text('Liked',
                 style: AppStyles.textStyle12.copyWith(
-                    color: const Color(0xff3787FF),
+                    color: AppColorLight.seconderyColor,
                     fontWeight: FontWeight.normal)),
             const SizedBox(
               width: 20,
@@ -23,7 +24,7 @@ class CustomActionButton extends StatelessWidget {
                 onPressed: () {},
                 child: Text('Reply',
                     style: AppStyles.textStyle12.copyWith(
-                        color: const Color(0xff767372),
+                        color: AppColorLight.captionTextColor,
                         fontWeight: FontWeight.normal))),
           ],
         ),
@@ -32,14 +33,14 @@ class CustomActionButton extends StatelessWidget {
           children: [
             const Icon(
               Icons.thumb_up_off_alt,
-              color: Color(0xff3787FF),
+              color: AppColorLight.seconderyColor,
             ),
             const SizedBox(
               width: 10,
             ),
             Text('21',
                 style: AppStyles.textStyle11
-                    .copyWith(color: const Color(0xff3787FF))),
+                    .copyWith(color: AppColorLight.seconderyColor)),
           ],
         ),
       ],

@@ -1,3 +1,4 @@
+import 'package:e_learning_app/core/constant/app_color.dart';
 import 'package:e_learning_app/modules/onboarding/views/onboarding_start_view.dart';
 import 'package:e_learning_app/modules/splash/widgets/sliding_text.dart';
 import 'package:flutter/material.dart';
@@ -43,7 +44,7 @@ class _SplashViewBodyState extends State<SplashViewBody> with SingleTickerProvid
         width: 172,
         height: 172,
         decoration: const  BoxDecoration(
-          color: Color(0xffFFFFFF),
+          color: AppColorLight.primaryColor,
           borderRadius: BorderRadius.all(Radius.circular(50))
         ),
         child: Column(

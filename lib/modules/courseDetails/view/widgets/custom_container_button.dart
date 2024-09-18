@@ -1,3 +1,4 @@
+import 'package:e_learning_app/core/constant/app_color.dart';
 import 'package:e_learning_app/core/widgets/custom_button_app.dart';
 import 'package:flutter/material.dart';
 
@@ -34,7 +35,7 @@ class CustomContainerButton extends StatelessWidget {
                   height: 50,
                   alignment: Alignment.center,
                   decoration: const BoxDecoration(
-                    color: Colors.white,
+                    color: AppColorLight.primaryColor,
                     borderRadius: BorderRadius.all(Radius.circular(50)),
                   ),
                   child: const Icon(Icons.star),
@@ -48,8 +49,8 @@ class CustomContainerButton extends StatelessWidget {
                 flex: 3,
                 child: CustomButtonApp(
                   textButton: 'Buy Now',
-                  backgroundColor: Color(0xff3787FF),
-                  textColor: Colors.white,
+                  backgroundColor: AppColorLight.bottunBackgroundColor,
+                  textColor: AppColorLight.textBottunColor,
                   height: 50,
                 ))
           ],

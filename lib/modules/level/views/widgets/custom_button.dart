@@ -1,3 +1,4 @@
+import 'package:e_learning_app/core/constant/app_color.dart';
 import 'package:flutter/material.dart';
 
 class CustomButton extends StatelessWidget {
@@ -20,10 +21,10 @@ class CustomButton extends StatelessWidget {
           height: height,
           alignment: Alignment.center,
           decoration: BoxDecoration(
-            color: const Color(0xff3787FF),
+            color: AppColorLight.seconderyColor,
             borderRadius: BorderRadius.all(Radius.circular(borderRadius))
           ),
-          child:  Text(text,style: TextStyle(fontSize: fontSize,color: Colors.white),),
+          child:  Text(text,style: TextStyle(fontSize: fontSize,color: AppColorLight.primaryColor),),
         ),
       ),
     );

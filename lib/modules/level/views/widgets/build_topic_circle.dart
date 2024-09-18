@@ -1,3 +1,4 @@
+import 'package:e_learning_app/core/constant/app_color.dart';
 import 'package:e_learning_app/modules/level/controller/track_controller.dart';
 import 'package:e_learning_app/modules/level/views/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
@@ -21,7 +22,7 @@ class BuildTopicCircle extends GetView<TrackController> {
                 right: 5,
                 child: Icon(
                   Icons.check_circle,
-                  color: Color(0xffFF9D42),
+                  color: AppColorLight.isSelectedBuildTopicCircle,
                   size: 30,
                 ),
               )

@@ -1,3 +1,4 @@
+import 'package:e_learning_app/core/constant/app_color.dart';
 import 'package:e_learning_app/core/utils/app_styles.dart';
 import 'package:e_learning_app/modules/onboarding/controller/onboarding_controller/onboarding_controller_repo_impl.dart';
 import 'package:e_learning_app/modules/onboarding/data/datasource/static/static.dart';
@@ -23,7 +24,7 @@ class CustomPageViewLogin extends GetView<OnboardingControllerRepoImpl> {
                   padding: const EdgeInsets.only(
                       left: 75, right: 75, top: 85, bottom: 21),
                   decoration: const BoxDecoration(
-                    color: Color(0xffFFFFFF),
+                    color: AppColorLight.primaryColor,
                     borderRadius: BorderRadius.only(
                         bottomLeft: Radius.circular(30),
                         bottomRight: Radius.circular(30)),

@@ -1,3 +1,4 @@
+import 'package:e_learning_app/core/constant/app_color.dart';
 import 'package:e_learning_app/core/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 
@@ -31,18 +32,18 @@ class CustomSliverList extends StatelessWidget {
                           Text(
                             'Welcome to the Course',
                             style: AppStyles.textStyle12
-                                .copyWith(color: const Color(0xff767372)),
+                                .copyWith(color: AppColorLight.captionTextColor),
                           ),
                           Text(
                             '6:10  ' '6:10',
                             style: AppStyles.textStyle12
-                                .copyWith(color: const Color(0xff060302)),
+                                .copyWith(color: AppColorLight.bodyTextColor),
                           ),
                         ],
                       ),
                       const Icon(
                         Icons.play_circle_fill,
-                        color: Color(0xff3787FF),
+                        color: AppColorLight.seconderyColor,
                         size: 44,
                       ),
                     ],
