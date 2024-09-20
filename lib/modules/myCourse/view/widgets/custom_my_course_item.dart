@@ -30,19 +30,27 @@ class CustomMyCourseItem extends StatelessWidget {
               Text(
                 'Product',
                 style: AppStyles.textStyle14.copyWith(
-                    fontWeight: FontWeight.normal, color: AppColorLight.primaryColor),
+                    fontWeight: FontWeight.normal,
+                    color: AppColorLight.primaryColor),
               ),
-
               Text(
                 'Design v1.0',
                 style: AppStyles.textStyle14.copyWith(
-                    fontWeight: FontWeight.normal, color: AppColorLight.primaryColor),
+                    fontWeight: FontWeight.normal,
+                    color: AppColorLight.primaryColor),
               ),
-
               const Expanded(child: SizedBox()),
-
-              const CustomRectangle(),
-              
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const CustomRectangle(),
+                  Text(
+                    'Completed',
+                    style: AppStyles.textStyle12
+                        .copyWith(fontWeight: FontWeight.normal),
+                  ),
+                ],
+              ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -51,7 +59,8 @@ class CustomMyCourseItem extends StatelessWidget {
                       Text(
                         '14',
                         style: AppStyles.textStyle14.copyWith(
-                            fontWeight: FontWeight.w600, color: AppColorLight.primaryColor),
+                            fontWeight: FontWeight.w600,
+                            color: AppColorLight.primaryColor),
                       ),
                       Text(
                         '/',

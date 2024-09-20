@@ -1,4 +1,4 @@
-import 'package:e_learning_app/core/constant/image_asset.dart';
+import 'package:e_learning_app/core/constant/app_images.dart';
 import 'package:e_learning_app/modules/splash/widgets/textLogo.dart';
 import 'package:flutter/material.dart';
 
@@ -20,7 +20,7 @@ class SlidingText extends StatelessWidget {
         child:  Column(
           children: [
             Image.asset(
-              AppImageAsset.symbolImage,
+              Assets.imagesSymbol,
               width: 71.3,
               height: 54.47,
               alignment: Alignment.center,

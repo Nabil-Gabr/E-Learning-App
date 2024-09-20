@@ -1,5 +1,6 @@
 import 'package:e_learning_app/core/constant/app_color.dart';
 import 'package:e_learning_app/core/utils/app_styles.dart';
+import 'package:e_learning_app/modules/myCourse/view/widgets/custom_rectangle.dart';
 import 'package:flutter/material.dart';
 
 class CustomLearnedToda extends StatelessWidget {
@@ -24,13 +25,12 @@ class CustomLearnedToda extends StatelessWidget {
               style:
                   AppStyles.textStyle12.copyWith(fontWeight: FontWeight.w400),
             ),
-            const SizedBox(
-              height: 16,
-            ),
+            
             const Text(
               '46min ' '/' ' 60min',
               style: AppStyles.textStyle12,
             ),
+            const CustomRectangle(),
           ],
         ),
       ),

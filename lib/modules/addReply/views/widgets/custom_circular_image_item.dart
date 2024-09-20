@@ -1,3 +1,4 @@
+import 'package:e_learning_app/core/constant/app_images.dart';
 import 'package:flutter/material.dart';
 
 class CustomCircularImageItem extends StatelessWidget {
@@ -15,7 +16,7 @@ class CustomCircularImageItem extends StatelessWidget {
       child: ClipRRect(
         borderRadius: BorderRadius.circular(44),
         child: Image.asset(
-          'asset/images/Group.png',
+          Assets.imagesGroup,
           fit: BoxFit.cover,
         ),
       ),

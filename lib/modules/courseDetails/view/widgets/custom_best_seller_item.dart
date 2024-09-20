@@ -1,3 +1,4 @@
+import 'package:e_learning_app/core/constant/app_images.dart';
 import 'package:e_learning_app/modules/courseDetails/view/widgets/custom_column_best_seller.dart';
 import 'package:flutter/material.dart';
 
@@ -17,7 +18,7 @@ class CustomBestSellerItem extends StatelessWidget {
             const CustomColumnBestSeller(),
             Expanded(
                 child: Image.asset(
-              'asset/images/Group.png',
+              Assets.imagesGroup,
               height: double.infinity,
             ))
           ],

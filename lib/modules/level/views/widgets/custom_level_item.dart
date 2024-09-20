@@ -1,4 +1,5 @@
 import 'package:e_learning_app/core/constant/app_color.dart';
+import 'package:e_learning_app/core/constant/app_images.dart';
 import 'package:e_learning_app/core/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 
@@ -36,7 +37,7 @@ class CustomLevel extends StatelessWidget {
             color: AppColorLight.captionTextColor,
             borderRadius: BorderRadius.only(bottomLeft: Radius.circular(20),bottomRight: Radius.circular(20))
           ),
-          child: Image.asset('asset/images/man1.png'),
+          child: Image.asset(Assets.imagesMan1),
         ),
       ],
     );

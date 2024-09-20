@@ -23,10 +23,7 @@ class CustomRectangle extends StatelessWidget {
             currenSliderValue = value;
           },
         ),
-        Text(
-          'Completed',
-          style: AppStyles.textStyle12.copyWith(fontWeight: FontWeight.normal),
-        ),
+        
       ],
     );
   }
