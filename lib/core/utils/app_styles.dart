@@ -49,4 +49,65 @@ abstract class AppStyles {
     static const textStyle30 = TextStyle(
       fontSize: 30, 
     );
+    ///////////////////////////////////////////
+    
+    static const styleRegular10 = TextStyle(
+    fontSize: 10,
+    fontWeight: FontWeight.w400,
+    color: AppColorLight.primaryColor,
+    fontFamily: 'DM Sans',
+  );
+
+    static const styleMedium12 = TextStyle(
+    fontSize: 12,
+    fontWeight: FontWeight.w500,
+    color: AppColorLight.captionTextColor,
+    fontFamily: 'DM Sans',
+  );
+    
+    static const styleRegular14 = TextStyle(
+    fontSize: 14,
+    fontWeight: FontWeight.w400,
+    color: AppColorLight.seconderyColor,
+    fontFamily: 'DM Sans',
+  );
+
+    static const styleMedium14 = TextStyle(
+    fontSize: 14,
+    fontWeight: FontWeight.w500,
+    color: AppColorLight.bodyTextColor,
+    fontFamily: 'DM Sans',
+  );
+    
+    static const styleMedium16 = TextStyle(
+    fontSize: 16,
+    fontWeight: FontWeight.w500,
+    color: AppColorLight.bodyTextColor,
+    fontFamily: 'DM Sans',
+  );
+
+  static const styleSemiBold16 = TextStyle(
+    fontSize: 16,
+    fontWeight: FontWeight.w600,
+    color: AppColorLight.seconderyColor,
+    fontFamily: 'DM Sans',
+  );
+
+  //regular
+
+
+  static const styleMedium20 = TextStyle(
+    fontSize: 20,
+    fontWeight: FontWeight.w500,
+    color: AppColorLight.bodyTextColor,
+    fontFamily: 'DM Sans',
+  );
+
+    static const styleMedium30 = TextStyle(
+      fontSize: 30, 
+      fontWeight: FontWeight.w500,
+      color: Color(0xff060302),
+      fontFamily: 'DM Sans',
+    );
+
 }

@@ -1,5 +1,4 @@
 import 'package:e_learning_app/core/constant/app_color.dart';
-import 'package:e_learning_app/core/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 
 class CustomRectangle extends StatelessWidget {

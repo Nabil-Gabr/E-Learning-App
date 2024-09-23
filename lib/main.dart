@@ -1,6 +1,5 @@
 import 'package:e_learning_app/core/constant/app_color.dart';
-import 'package:e_learning_app/modules/addReply/views/add_reply_view.dart';
-import 'package:e_learning_app/modules/courseDetails/view/course_details_view.dart';
+import 'package:e_learning_app/modules/courses/view/courses_view.dart';
 import 'package:e_learning_app/modules/myCourse/view/my_course_view.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
@@ -19,7 +18,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         scaffoldBackgroundColor: AppColorLight.scaffoldBackgroundColor,
       ),
-      home: const MyCourseView(),
+      home: const CoursesView(),
+      // const MyCourseView(),
       // const AddReplyView(),
       // const TrackView(),
       // const SplashView(),
