@@ -55,7 +55,7 @@ class CustomPageViewStart extends GetView<OnboardingControllerRepoImpl> {
                   Text(
                     onboardingStartList[index].subTitle!,
                     style: AppStyles.textStyle12.copyWith(
-                        color:  AppColorLight.captionTextColor,
+                        color: AppColorLight.captionTextColor,
                         fontWeight: FontWeight.normal),
                     textAlign: TextAlign.center,
                   ),

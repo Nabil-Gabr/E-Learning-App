@@ -7,10 +7,10 @@ class TextLogo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Text(
-          "Education app",
-          textAlign: TextAlign.center,
-          style: TextStyle(fontSize: fontSize,color: AppColorLight.seconderyColor),
-        );
+    return Text(
+      "Education app",
+      textAlign: TextAlign.center,
+      style: TextStyle(fontSize: fontSize, color: AppColorLight.seconderyColor),
+    );
   }
 }

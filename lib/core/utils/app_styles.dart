@@ -51,6 +51,7 @@ abstract class AppStyles {
     );
     ///////////////////////////////////////////
     
+    // New TextStyles 
     static const styleRegular10 = TextStyle(
     fontSize: 10,
     fontWeight: FontWeight.w400,
