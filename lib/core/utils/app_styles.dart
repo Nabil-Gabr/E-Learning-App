@@ -79,6 +79,15 @@ abstract class AppStyles {
     color: AppColorLight.bodyTextColor,
     fontFamily: 'DM Sans',
   );
+
+  static const styleRegular17 = TextStyle(
+    fontSize: 17,
+    fontWeight: FontWeight.w400,
+    color: AppColorLight.bodyTextColor,
+    fontFamily: 'DM Sans',
+  );
+
+  
     
     static const styleMedium16 = TextStyle(
     fontSize: 16,
@@ -94,12 +103,16 @@ abstract class AppStyles {
     fontFamily: 'DM Sans',
   );
 
-  //regular
-
-
   static const styleMedium20 = TextStyle(
     fontSize: 20,
     fontWeight: FontWeight.w500,
+    color: AppColorLight.bodyTextColor,
+    fontFamily: 'DM Sans',
+  );
+
+  static const styleRegular20 = TextStyle(
+    fontSize: 20,
+    fontWeight: FontWeight.w400,
     color: AppColorLight.bodyTextColor,
     fontFamily: 'DM Sans',
   );

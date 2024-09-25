@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-class CustomAppBar extends StatelessWidget {
+class CustomAppBarApp extends StatelessWidget {
   final void Function()? onPressed;
-  const CustomAppBar({
+  const CustomAppBarApp({
     super.key,
     this.onPressed,
   });

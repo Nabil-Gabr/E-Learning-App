@@ -1,4 +1,4 @@
-import 'package:e_learning_app/core/widgets/custom_app_bar.dart';
+import 'package:e_learning_app/core/widgets/custom_app_bar_app.dart';
 import 'package:e_learning_app/modules/courseDetails/view/widgets/custom_about_section.dart';
 import 'package:e_learning_app/modules/courseDetails/view/widgets/custom_best_seller_item.dart';
 import 'package:e_learning_app/modules/courseDetails/view/widgets/custom_container_button.dart';
@@ -19,7 +19,7 @@ class CourseDetailsView extends StatelessWidget {
               child: CustomScrollView(
                 slivers: [
                   SliverToBoxAdapter(
-                    child: CustomAppBar(),
+                    child: CustomAppBarApp(),
                   ),
                   SliverToBoxAdapter(
                     child: CustomBestSellerItem(),

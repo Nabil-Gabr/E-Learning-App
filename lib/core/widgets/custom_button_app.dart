@@ -9,8 +9,11 @@ class CustomButtonApp extends GetView<OnboardingControllerRepoImpl> {
   final Color? backgroundColor;
   final Color? textColor;
   final String textButton;
+  final double? fontSize;
   const CustomButtonApp(
+    
       {super.key,
+      this.fontSize, 
       this.onTap,
       this.width,
       this.height,
@@ -32,7 +35,7 @@ class CustomButtonApp extends GetView<OnboardingControllerRepoImpl> {
         ),
         child: Text(
           textButton,
-          style: TextStyle(fontSize: 18, color: textColor),
+          style: TextStyle(fontSize: fontSize ?? 18, color: textColor),
         ),
       ),
     );
