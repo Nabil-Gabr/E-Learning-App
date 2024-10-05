@@ -1,5 +1,5 @@
 import 'package:e_learning_app/core/constant/app_color.dart';
-import 'package:e_learning_app/modules/splash/splash_view.dart';
+import 'package:e_learning_app/core/utils/app_get_pages.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 
@@ -17,7 +17,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         scaffoldBackgroundColor: AppColorLight.scaffoldBackgroundColor,
       ),
-      home: const SplashView(),
+      // home: const SplashView(),
+      getPages: AppGetPages.getPages,
       
       //home: const SplashView(),---->Task 1 : SplashView & OnboardingStartView & OnboardingLoginView
       //home: const TrackView() ,---->Task 2 : TrackView  & LevelView

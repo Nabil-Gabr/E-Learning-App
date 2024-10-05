@@ -1,6 +1,6 @@
+import 'package:e_learning_app/core/utils/app_get_pages.dart';
 import 'package:e_learning_app/modules/onboarding/controller/onboarding_controller/onboarding_controller_repo.dart';
 import 'package:e_learning_app/modules/onboarding/data/datasource/static/static.dart';
-import 'package:e_learning_app/modules/onboarding/views/onboarding_login_view.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -13,7 +13,7 @@ class OnboardingControllerRepoImpl extends OnboardingControllerRepo {
   nextStart() {
     currenPageStart++;
     if (currenPageStart > onboardingStartList.length - 1) {
-      Get.to(() => const OnboardingLoginView());
+      Get.toNamed( AppGetPages.onboardingLogintView);
     } else {
       if (currenPageStart + 1 == onboardingStartList.length) {
         textS = 'Start';
