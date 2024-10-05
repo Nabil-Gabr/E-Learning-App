@@ -5,7 +5,7 @@ import 'package:e_learning_app/modules/onboarding/views/widgets/custtom_page_vie
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class OnboardingStartViewBody extends GetView<OnboardingControllerRepoImpl> {
+class OnboardingStartViewBody extends StatelessWidget {
   const OnboardingStartViewBody({super.key});
 
   @override
@@ -17,16 +17,19 @@ class OnboardingStartViewBody extends GetView<OnboardingControllerRepoImpl> {
         const Expanded(child: SizedBox()),
         Padding(
           padding: const EdgeInsets.only(bottom: 40.0),
-          child: CustomButtonApp(
+          child: GetBuilder<OnboardingControllerRepoImpl>(
+            init: OnboardingControllerRepoImpl(),
+            builder: (ctrl)=>CustomButtonApp(
+            
             onTap: () {
-              controller.nextStart();
+              ctrl.nextStart();
             },
-            textButton: 'Next',
+            textButton: '${ctrl.textS}' ,
             height: 68,
             width: 197,
             backgroundColor: AppColorLight.bottunBackgroundColor,
             textColor: AppColorLight.textBottunColor,
-          ),
+          )),
         ),
       ],
     );

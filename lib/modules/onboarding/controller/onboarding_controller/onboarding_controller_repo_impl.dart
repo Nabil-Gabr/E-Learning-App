@@ -5,35 +5,35 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class OnboardingControllerRepoImpl extends OnboardingControllerRepo {
-
   late PageController pageControllerStart;
-  int currenPageStart=0;
+  int currenPageStart = 0;
+  String textS = 'Next';
 
   @override
   nextStart() {
     currenPageStart++;
-    if (currenPageStart > onboardingStartList.length -1) {
-      Get.to(()=> const OnboardingLoginView());
-    }else{
-      pageControllerStart.animateToPage(currenPageStart, duration: const Duration(milliseconds: 900), curve: Curves.easeInOut);
+    if (currenPageStart > onboardingStartList.length - 1) {
+      Get.to(() => const OnboardingLoginView());
+    } else {
+      if (currenPageStart + 1 == onboardingStartList.length) {
+        textS = 'Start';
+        update();
+      }
+      pageControllerStart.animateToPage(currenPageStart,
+          duration: const Duration(milliseconds: 900), curve: Curves.easeInOut);
       update();
     }
-    
   }
 
   @override
   onPageChangedStart(int index) {
-    currenPageStart=index;
+    currenPageStart = index;
     update();
   }
 
   @override
   void onInit() {
-    pageControllerStart=PageController();
+    pageControllerStart = PageController();
     super.onInit();
   }
-  
-  
-  
-  
 }
