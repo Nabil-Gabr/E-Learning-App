@@ -24,7 +24,7 @@ class OnboardingStartViewBody extends StatelessWidget {
             onTap: () {
               ctrl.nextStart();
             },
-            textButton: '${ctrl.textS}' ,
+            textButton: ctrl.textS,
             height: 68,
             width: 197,
             backgroundColor: AppColorLight.bottunBackgroundColor,
