@@ -1,17 +1,22 @@
 import 'package:device_preview/device_preview.dart';
 import 'package:e_learning_app/core/constant/app_color.dart';
 import 'package:e_learning_app/core/utils/app_get_pages.dart';
-import 'package:e_learning_app/modules/level/views/track_view.dart';
-import 'package:e_learning_app/modules/splash/splash_view.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
-void main() {
+
+ late SharedPreferences sharedPreferences ;
+void main() async{
+  WidgetsFlutterBinding.ensureInitialized();
+  sharedPreferences =await SharedPreferences.getInstance();
   // runApp(const MyApp());
   runApp(DevicePreview(
     enabled: true,
     builder: (context) => const MyApp(), // Wrap your app
   ));
+
+  print('===============================${sharedPreferences.getString('role')}');
 }
 
 class MyApp extends StatelessWidget {
