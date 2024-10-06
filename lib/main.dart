@@ -1,10 +1,17 @@
+import 'package:device_preview/device_preview.dart';
 import 'package:e_learning_app/core/constant/app_color.dart';
+import 'package:e_learning_app/core/utils/app_get_pages.dart';
 import 'package:e_learning_app/modules/level/views/track_view.dart';
+import 'package:e_learning_app/modules/splash/splash_view.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 
 void main() {
-  runApp(const MyApp());
+  // runApp(const MyApp());
+  runApp(DevicePreview(
+    enabled: true,
+    builder: (context) => const MyApp(), // Wrap your app
+  ));
 }
 
 class MyApp extends StatelessWidget {
@@ -14,11 +21,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
+      locale: DevicePreview.locale(context),
+      builder: DevicePreview.appBuilder,
       theme: ThemeData(
         scaffoldBackgroundColor: AppColorLight.scaffoldBackgroundColor,
       ),
-      home: const TrackView(),
-      // getPages: AppGetPages.getPages,
+      // home: const SplashView(),
+      getPages: AppGetPages.getPages,
       
       //home: const SplashView(),---->Task 1 : SplashView & OnboardingStartView & OnboardingLoginView
       //home: const TrackView() ,---->Task 2 : TrackView  & LevelView

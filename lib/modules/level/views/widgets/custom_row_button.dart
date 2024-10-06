@@ -16,10 +16,25 @@ class CustomRowButton extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          TextButton(onPressed: onPressed, child: const Text('Skip',style: TextStyle(fontSize: 15,color: AppColorLight.bodyTextColor),)),
-           CustomButton(text: 'Continue',fontSize: 17.2, width: 110, height: 110, borderRadius: 110,onTap: () {
-             Get.to(()=> const LevelView());
-           },),
+          TextButton(
+              onPressed: () {
+                Get.to(() => const LevelView());
+              },
+              child: const Text(
+                'Skip',
+                style:
+                    TextStyle(fontSize: 15, color: AppColorLight.bodyTextColor),
+              )),
+          CustomButton(
+            text: 'Continue',
+            fontSize: 17.2,
+            width: 110,
+            height: 110,
+            borderRadius: 110,
+            onTap: () {
+              Get.to(() => const LevelView());
+            },
+          ),
         ],
       ),
     );

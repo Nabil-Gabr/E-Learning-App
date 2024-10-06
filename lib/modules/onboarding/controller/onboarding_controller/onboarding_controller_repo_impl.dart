@@ -16,7 +16,7 @@ class OnboardingControllerRepoImpl extends OnboardingControllerRepo {
       Get.toNamed( AppGetPages.onboardingLogintView);
     } else {
       if (currenPageStart + 1 == onboardingStartList.length) {
-        textS = 'Start';
+        textS = 'Get Started';
         update();
       }
       pageControllerStart.animateToPage(currenPageStart,

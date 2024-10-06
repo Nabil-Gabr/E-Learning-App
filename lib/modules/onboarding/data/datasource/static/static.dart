@@ -1,4 +1,5 @@
 import 'package:e_learning_app/core/constant/app_images.dart';
+import 'package:e_learning_app/modules/onboarding/data/models/onboarding_login_model.dart';
 import 'package:e_learning_app/modules/onboarding/data/models/onboarding_start_model.dart';
 
 List<OnboardingStartModel> onboardingStartList = [
@@ -21,15 +22,15 @@ List<OnboardingStartModel> onboardingStartList = [
 
 
 
-List<OnboardingStartModel> onboardingLoginList = [
-  OnboardingStartModel(
+List<OnboardingLoginModel> onboardingLoginList = [
+  OnboardingLoginModel(
     image: Assets.imagesOnlineSchoolSVG1,
     title: 'Welcome to Educora.',
     subTitle:
         'Login as a',
   ),
 
-  OnboardingStartModel(
+  OnboardingLoginModel(
     image: Assets.imagesUndrawWeb,
     title: 'Welcome to Educora.',
     subTitle:
