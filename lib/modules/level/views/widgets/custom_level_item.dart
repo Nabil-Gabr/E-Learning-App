@@ -7,39 +7,50 @@ class CustomLevel extends StatelessWidget {
   final String textLevel;
   final String ageLevel;
   final double? height;
+  final bool asActive;
+  final void Function()? onTap;
   const CustomLevel({
     super.key, 
     this.height,
+    this.onTap,
+    required this.asActive,
     required this.textLevel, 
     required this.ageLevel,
   });
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.end,
-      children: [
-        Text(textLevel,style:  AppStyles.textStyle12.copyWith(color: AppColorLight.bodyTextColor,fontWeight: FontWeight.normal),),
-        const Flexible(child: SizedBox(height: 19,)),
-        Container(
-          height: 54,
-          alignment: Alignment.center,
-          decoration: const BoxDecoration(
-            color: AppColorLight.primaryColor,
-            borderRadius: BorderRadius.only(topLeft: Radius.circular(20),topRight: Radius.circular(20))
+    return GestureDetector(
+      onTap:onTap ,
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.end,
+        children: [
+          Text(textLevel,style:  AppStyles.textStyle12.copyWith(color: asActive ? AppColorLight.seconderyColor : AppColorLight.bodyTextColor,fontWeight: FontWeight.normal),),
+          const Flexible(child: SizedBox(height: 19,)),
+          Container(
+            height: 54,
+            alignment: Alignment.center,
+            decoration:  BoxDecoration(
+              color: asActive ? AppColorLight.seconderyColor : AppColorLight.primaryColor,
+              borderRadius: const BorderRadius.only(topLeft: Radius.circular(20),topRight: Radius.circular(20))
+            ),
+            child: Text(ageLevel,style: AppStyles.textStyle16,textAlign: TextAlign.center,),
           ),
-          child: Text(ageLevel,style: AppStyles.textStyle16,textAlign: TextAlign.center,),
-        ),
-        Container(
-          height: height,
-          alignment: Alignment.center,
-          decoration: const BoxDecoration(
-            color: AppColorLight.captionTextColor,
-            borderRadius: BorderRadius.only(bottomLeft: Radius.circular(20),bottomRight: Radius.circular(20))
+          Container(
+            height: height,
+            alignment: Alignment.center,
+            decoration:  BoxDecoration(
+              border: Border.all(
+                width: 2,
+                color: asActive ? AppColorLight.seconderyColor : AppColorLight.captionTextColor,
+              ) ,
+              color: AppColorLight.captionTextColor,
+              borderRadius: const BorderRadius.only(bottomLeft: Radius.circular(20),bottomRight: Radius.circular(20))
+            ),
+            child: Image.asset(Assets.imagesMan1),
           ),
-          child: Image.asset(Assets.imagesMan1),
-        ),
-      ],
+        ],
+      ),
     );
   }
 }
