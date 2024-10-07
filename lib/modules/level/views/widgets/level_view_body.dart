@@ -9,19 +9,21 @@ class LevelViewbody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const  Padding(
-      padding: EdgeInsets.only(left: 19 ,right: 21),
+    return   Padding(
+      padding: const EdgeInsets.only(left: 19 ,right: 21),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Flexible(child: SizedBox(height: 50,)),
-          CustomIconButton(),
-          SizedBox(height: 8,),
-          CustomTextChoose(text: 'Choose your level',),
-          Flexible(child: SizedBox(height: 33,)),
-          CustomSelectLevel(),
-          Expanded(child: SizedBox()),
-          CustomRowButton()
+          const Flexible(child: SizedBox(height: 50,)),
+          CustomIconButton(onPressed: () {
+            Navigator.pop(context);
+          },),
+          const SizedBox(height: 8,),
+          const CustomTextChoose(text: 'Choose your level',),
+          const Flexible(child: SizedBox(height: 33,)),
+          const CustomSelectLevel(),
+          const Expanded(child: SizedBox()),
+          const CustomRowButton()
           
         ],
       ),

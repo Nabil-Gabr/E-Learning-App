@@ -3,13 +3,13 @@ import 'package:e_learning_app/core/constant/app_images.dart';
 import 'package:e_learning_app/core/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 
-class CustomLevel extends StatelessWidget {
+class CustomLevelItemButton extends StatelessWidget {
   final String textLevel;
   final String ageLevel;
   final double? height;
   final bool asActive;
   final void Function()? onTap;
-  const CustomLevel({
+  const CustomLevelItemButton({
     super.key, 
     this.height,
     this.onTap,
