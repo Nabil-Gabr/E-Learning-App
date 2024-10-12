@@ -17,7 +17,7 @@ class CustomRowAddReplies extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
            Text(
-            '0 Replies',
+            '1 Replies',
             style:
                 AppStyles.textStyle14.copyWith(color: AppColorLight.captionTextColor,fontWeight: FontWeight.normal),
           ),

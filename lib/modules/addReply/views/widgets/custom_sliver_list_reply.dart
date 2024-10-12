@@ -58,6 +58,7 @@ class _CustomSliverListReplyState extends State<CustomSliverListReply> {
                             children: [
                               snapshot.data!.docs[index]['role'] == 'Student'
                                   ? Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
                                         Text(
                                           snapshot.data!.docs[index]
@@ -80,6 +81,7 @@ class _CustomSliverListReplyState extends State<CustomSliverListReply> {
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
                                         Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
                                             Text(
                                               snapshot.data!.docs[index]
