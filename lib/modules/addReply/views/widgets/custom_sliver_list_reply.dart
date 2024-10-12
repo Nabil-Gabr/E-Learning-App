@@ -19,7 +19,7 @@ class _CustomSliverListReplyState extends State<CustomSliverListReply> {
   @override
   Widget build(BuildContext context) {
     final Stream<QuerySnapshot> usersStream =
-        FirebaseFirestore.instance.collection(messagesCollections).snapshots();
+        FirebaseFirestore.instance.collection(messagesCollections).orderBy('date').snapshots();
     return StreamBuilder(
         stream: usersStream,
         builder: (BuildContext context, AsyncSnapshot<QuerySnapshot> snapshot) {
