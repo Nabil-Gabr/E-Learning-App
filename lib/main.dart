@@ -1,10 +1,12 @@
 import 'package:device_preview/device_preview.dart';
 import 'package:e_learning_app/core/constant/app_color.dart';
-import 'package:e_learning_app/core/utils/app_get_pages.dart';
-import 'package:e_learning_app/modules/level/views/track_view.dart';
+import 'package:e_learning_app/modules/addReply/views/widgets/add_reply_view.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+
+import 'firebase_options.dart';
 
 
  late SharedPreferences sharedPreferences ;
@@ -14,6 +16,9 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+  options: DefaultFirebaseOptions.currentPlatform,
+);
   sharedPreferences =await SharedPreferences.getInstance();
   // runApp(const MyApp());
   runApp(DevicePreview(
@@ -38,11 +43,11 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: AppColorLight.scaffoldBackgroundColor,
       ),
       
-      getPages: AppGetPages.getPages,//Task 1: SplashView & OnboardingStartView & OnboardingLoginView
+      // getPages: AppGetPages.getPages,//Task 1: SplashView & OnboardingStartView & OnboardingLoginView
       // home: const TrackView(),//Task 2: TrackView  & LevelView
       
       
-      //home: const AddReplyView(),-->Task 3 : AddReplyView 
+      home: const AddReplyView(), //-->Task 3 : AddReplyView 
       //home: const CoursesView(),--->Task 4 : CoursesView & MyCourseView & CourseDetailsView
       //home: const NavigationTabBar()Task 5 : NavigationTabBar & teacherstView
     );
