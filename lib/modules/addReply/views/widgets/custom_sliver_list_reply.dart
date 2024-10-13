@@ -5,6 +5,7 @@ import 'package:e_learning_app/core/utils/app_styles.dart';
 import 'package:e_learning_app/modules/addReply/views/widgets/custom_action_button.dart';
 import 'package:e_learning_app/modules/addReply/views/widgets/custom_circular_image_item.dart';
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 
 class CustomSliverListReply extends StatefulWidget {
   const CustomSliverListReply({
@@ -18,8 +19,11 @@ class CustomSliverListReply extends StatefulWidget {
 class _CustomSliverListReplyState extends State<CustomSliverListReply> {
   @override
   Widget build(BuildContext context) {
-    final Stream<QuerySnapshot> usersStream =
-        FirebaseFirestore.instance.collection(messagesCollections).orderBy('date').snapshots();
+    final Stream<QuerySnapshot> usersStream = FirebaseFirestore.instance
+        .collection(messagesCollections)
+        .orderBy('date')
+        .snapshots();
+    //using StreamBuilder
     return StreamBuilder(
         stream: usersStream,
         builder: (BuildContext context, AsyncSnapshot<QuerySnapshot> snapshot) {
@@ -58,30 +62,46 @@ class _CustomSliverListReplyState extends State<CustomSliverListReply> {
                             children: [
                               snapshot.data!.docs[index]['role'] == 'Student'
                                   ? Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
                                       children: [
                                         Text(
                                           snapshot.data!.docs[index]
                                               ['userName'],
                                           style: AppStyles.textStyle14,
                                         ),
-                                        Text(
-                                            '11 mins ago'
-                                            '   .   '
-                                            '${snapshot.data!.docs[index]['role']}',
-                                            style: AppStyles.textStyle12
-                                                .copyWith(
-                                                    color: AppColorLight
-                                                        .captionTextColor,
-                                                    fontWeight:
-                                                        FontWeight.normal)),
+                                        Row(
+                                          children: [
+                                            Text(
+                                                DateFormat.Hm().format(snapshot
+                                                    .data!.docs[index]['date']
+                                                    .toDate()),
+                                                style: AppStyles.textStyle12
+                                                    .copyWith(
+                                                        color: AppColorLight
+                                                            .captionTextColor,
+                                                        fontWeight:
+                                                            FontWeight.normal)),
+                                            Text(
+                                                '   .   '
+                                                '${snapshot.data!.docs[index]['role']}',
+                                                style: AppStyles.textStyle12
+                                                    .copyWith(
+                                                        color: AppColorLight
+                                                            .captionTextColor,
+                                                        fontWeight:
+                                                            FontWeight.normal)),
+                                          ],
+                                        )
                                       ],
                                     )
                                   : Row(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
                                       children: [
                                         Column(
-                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.start,
                                           children: [
                                             Text(
                                               snapshot.data!.docs[index]
@@ -97,7 +117,9 @@ class _CustomSliverListReplyState extends State<CustomSliverListReply> {
                                                             FontWeight.normal)),
                                           ],
                                         ),
-                                        const SizedBox(width:53 ,),
+                                        const SizedBox(
+                                          width: 53,
+                                        ),
                                         Container(
                                           width: 66,
                                           height: 21,
@@ -111,10 +133,8 @@ class _CustomSliverListReplyState extends State<CustomSliverListReply> {
                                             'teacher',
                                             style: AppStyles.styleMedium12
                                                 .copyWith(
-                                                    fontWeight:
-                                                        FontWeight.w400,
-                                                        color: Colors.white
-                                                        ),
+                                                    fontWeight: FontWeight.w400,
+                                                    color: Colors.white),
                                           ),
                                         )
                                       ],
@@ -123,7 +143,10 @@ class _CustomSliverListReplyState extends State<CustomSliverListReply> {
                                   style: AppStyles.textStyle12.copyWith(
                                       color: AppColorLight.captionTextColor,
                                       fontWeight: FontWeight.normal)),
-                               CustomActionButton(itemList: snapshot.data!.docs[index]['likes'],)
+                              CustomActionButton(
+                                itemList: snapshot.data!.docs[index]['likes'],
+                                docsId: snapshot.data!.docs[index].id,
+                              )
                             ],
                           )),
                     ],

@@ -14,7 +14,8 @@ class CustomTextField extends StatelessWidget {
     // Create a CollectionReference called users that references the firestore collection
     CollectionReference replies =
         FirebaseFirestore.instance.collection(messagesCollections);
-
+        
+    //add new reply
     Future<void> addReply(String message) {
       // Call the user's CollectionReference to add a new user
       return replies.add({
